@@ -116,14 +116,64 @@ echo '<pre>';
 //COMO UMA FUNÇÃO
 
 // class foi{
-//     public function __invoke(){
-//         return '';
-
+//     public function __invoke($primeiro, $segundo){
+//         return 'testando ' . $primeiro . ' e aqui' . $segundo;
 //     }
 // }
 
+// $resposta = new foi();
+
+// echo call_user_func($resposta, 'aqui', ' too');
+
 
 //USAR CALL_USER_FUNC DENTRO DE OUTRAS FUNÇÕES
+
+// function teste($nome){
+//     return 'chamando ' . $nome;
+// }
+
+// function teste2($callback){
+// return call_user_func($callback, 'todos');
+// }
+
+// echo teste2('teste');
+
+//USANDO COLCHETES [ ] PARA EXPLICAR QUAL MÉTODO SERÁ UTILIZADO:
+// class Pessoa {
+//     public function cumprimentar($nome) {
+//         return "Oi, $nome!";
+//     }
+
+//     public function despedir($nome) {
+//         return "Tchau, $nome!";
+//     }
+// }
+
+// $obj = new Pessoa();
+
+// // Chamando métodos específicos com call_user_func
+// echo call_user_func([$obj, 'cumprimentar'], 'Ana') . PHP_EOL;
+// // Saída: Oi, Ana!
+
+// echo call_user_func([$obj, 'despedir'], 'Carlos') . PHP_EOL;
+// // Saída: Tchau, Carlos!
+
+
+//CLOSURES SÃO VARIÁVEIS QUE ARMAZENAM CONSIGO VALORES DE FUNÇÕES QUE
+//PODEM SER USADAS COMO ARGUMENTO PARA OUTRAS FUNÇÕES.
+
+
+$armazena= function ($foi){
+    return 'aqui se tem ' . $foi;
+};
+
+echo $armazena('resultado');
+
+
+
+
+
+
 
 
 
