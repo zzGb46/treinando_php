@@ -1,5 +1,6 @@
 <?php
 
+
 echo '<pre>';
 // $names = ['gabriel', 'ele', 'elas'];
 
@@ -163,33 +164,35 @@ echo '<pre>';
 //PODEM SER USADAS COMO ARGUMENTO PARA OUTRAS FUNÇÕES.
 
 
-$armazena= function ($foi){
-    return 'aqui se tem ' . $foi;
-};
+// $armazena= function ($foi){
+//     return 'aqui se tem ' . $foi;
+// };
 
-echo $armazena('resultado');
-
-
+// echo $armazena('resultado');
 
 
-
-
+//Superglobal $_SESSION
+//ABRINDO SEÇÃO:
 
 
 
 
+// require './teste.php';
+// require './teste2.php';
+
+// $_SESSION['ida']=['nome'=>'gabriel', ' idade'=>55];
+// $_SESSION['pessoa']= ['vulgo'=>'biel', 'idade'=>77];
+
+//Fechando seção:
+// unset($_SESSION['ida']);
+
+//EXCLUINDO TODAS AS SEÇÕES
+//DE UMA VEZ:
+// session_destroy();
 
 
-
-
-
-
-
-
-
-
-
-
+//CRIAR SUAS PRÓPRIAS VARIÁVEIS DE AMBIENTE
+//QUE SÃO IMPORTANTES PARA CONEXÃO COM O BANCO DE DADOS
 
 
 
