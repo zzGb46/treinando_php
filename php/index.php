@@ -22,6 +22,13 @@ echo '<pre>';
 //     'Gabriel_m@tipi02');
 //     return $pdo;
 // }
+if(isset($_POST['email']) && $_POST['senha']){
+    var_export($_POST['email']);
+    var_export($_POST['senha']);
+}else{
+    echo 'suma';
+}
+
 
 
 // function getData($table){
